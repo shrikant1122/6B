@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>
+            UPSC Exam Registration
+        </title>
+    </head>
+    <body>
+        <header>
+            <h1>UPSC</h1>
+        </header>
+        <form action="submit.html"  method="POST">
+            <fieldset>
+                <legend>Student Information</legend>
+                <input type="text" placeholder="Fist Name" required><br><br>
+                <input type="text" placeholder="Middle Name" required><br><br>
+                <input type="text" placeholder="Last Name" required><br><br>
+                <input type="text" placeholder="Father Name" required><br><br>
+                <input type="text" placeholder="Mother Name"required><br><br>
+                <label for="gender">Male</label>
+                <input type="radio" value="Male" name="gender" required>
+                <label for="gender">Female</label>
+                <input type="radio" value="Female" name="gender" required><br><br>
+                <input type="text" placeholder="Mobile No." required><br><br>
+                <input type="email" placeholder="Email ID" required><br><br>
+                <textarea name="Address" cols="30" rows="3" placeholder="Address" required></textarea><br><br>
+                <label for="ID Proof">Select ID Proof</label>
+                <select name="ID proof" >
+                    <option value="Addhar Card" selected>Addhar Card</option>
+                    <option value="Pan Card">Pan Card</option>
+                    <option value="Voting Card">Voting Card</option>
+
+                </select>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Educational Information</legend>
+                <label for="Qualification"> Qualification</label>
+                <select  multiple  name="Qualification"required >
+                    <option value="SSC">SSC</option>
+                    <option value="HSC">HSC</option>
+                    <option value="UG">UG</option>
+                    <option value="PG">PG</option>
+                </select><br><br>
+
+                <label for="Branch"> Branch</label>
+                <select name="Branch" required >
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Information Technology">Information Technology</option>
+                    <option value="Electrical">Electrical</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Civil">Civil</option>
+                 </select><br><br>
+
+                 <label for="College">College Name</label>
+                 <input list="college" name="College">
+                 <datalist id="college">
+                     <option value="Walchand College of Engineering">Walchand College of Engineering</option>
+                     <option value="National Institue of Technology">National Institue of Technology</option>
+                     <option value="Raisoni College of Engineering">Raisoni College of Engineering</option>
+                     <option value="Government College Auranagabad">Government College Auranagabad</option>   
+                    </datalist><br><br>
+                
+                    
+                 <label for="University">University Name</label>
+                 <input list="university" name="University">
+                 <datalist id="university">
+                     <option value="RTMNU Nagpur">RTMNU Nagpur</option>
+                     <option value="SPPUP Pune">SPPUP Pune</option>
+                     <option value="DBAMU Aurangabad">DBAMU Aurangabad</option> 
+                     <option value="Shivaji University Kolhapur">Shivaji University</option>  
+                    </datalist>
+            </fieldset><br>
+
+            <fieldset>
+                <legend>Exam Preferences</legend>
+
+                <label for="type">Exam Type</label>
+                <select name="type" >
+                    <option value="Online">Online</option>
+                    <option value="Offline">Offline</option>
+                </select><br><br>
+
+                <label for="city">Exam City</label>
+                <select name="city" >
+                    <optgroup label="Maharashtra">
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                    </optgroup>
+
+                    <optgroup label="Delhi">
+                        <option value=" New Delhi"> New Delhi</option>
+                        <option value="West Delhi">West Delhi</option>
+                        <option value="North Delhi">North Delhi</option>
+                    </optgroup>
+
+                    <optgroup label="Madhya Pradesh">
+                        <option value="Bhopal">Bhopal</option>
+                        <option value="Gwalior">Gwalior</option>
+                        <option value="Jabalpur">Jabalpur</option>
+                    </optgroup>
+                </select>
+            </fieldset><br>
+
+            <input type="submit" value="Submit Form" onclick="alert('Confirm Submission of Form')">
+            <input type="reset" value="Reset Form" onclick="alert('Confirm Resubmission of Form')">
+        </form>
+
+    </body>
+</html>
